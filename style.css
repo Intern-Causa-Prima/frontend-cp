@@ -80,27 +80,32 @@ body, html {
     color: #593817;
 }
 
-.welcoming-section{
-    background-image: url('img/img-page-utama.png') !important; 
-    background-repeat: no-repeat;
-    background-size: 100%;
+h2{
+    font-weight: 600;
+    font-size: 35px;
+    color: #593817;
 }
 
-.welcoming-text{
+p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.col-sm-6.p-3{
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #FFF6EC;
 }
 
-.bg-white{
-    background-color: #FFF6EC;
+h1{
+    font-weight: 700; 
+    font-size: 60px;
 }
 
-.content-item{
-    padding: 50px 20px;
+h3{
+    font-weight: 500;
+    font-size: 25px;
 }
-

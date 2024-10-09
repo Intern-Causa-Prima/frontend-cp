@@ -109,3 +109,73 @@ h3{
     font-weight: 500;
     font-size: 25px;
 }
+
+.icon-check{
+    width: 30px;
+    height: 30px;
+}
+
+.col-sm-4.p-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn-primary{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #E86F33;
+    border: none;
+    width: fit-content;
+}
+
+.btn.btn-primary:hover{
+    background-color: #ae5326;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    border-radius: 15px;
+    border: none;
+}
+
+.card-img-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h5.card-title{
+    font-size: 20px;
+    text-align: start;
+
+}
+
+a.card-link{
+    font-size: 13px;
+    color: #593817;
+    text-decoration: none;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(89, 56, 23, 0.5);
+}
+
+.card-img{
+    width: 69px;
+    height: 69px;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}

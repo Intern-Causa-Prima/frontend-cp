@@ -28,7 +28,7 @@ body, html {
 /*terapin ke keempat item navbar*/
 .nav-link{
     color: #fff6ec;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     padding: 10px 20px !important;
 }
@@ -57,7 +57,7 @@ body, html {
 
 /*terapin ke dropdown item*/
 .dropdown-item{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     padding: 10px 20px;
 }
@@ -132,7 +132,6 @@ h3{
 
 .btn.btn-primary:hover{
     background-color: #ae5326;
-
 }
 
 .card-body{
@@ -159,8 +158,11 @@ h5.card-title{
 
 a.card-link{
     font-size: 13px;
-    color: #593817;
+}
+
+a{
     text-decoration: none;
+    color: #593817;
 }
 
 .card:hover{
@@ -177,5 +179,13 @@ a.card-link{
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    
+}
+
+.contact-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.logo-sekolah{
+    width: 200px;
 }

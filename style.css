@@ -189,3 +189,19 @@ a{
 .logo-sekolah{
     width: 200px;
 }
+
+.row.g-3{
+    padding: 50px 100px;
+    gap: 10px;
+    background-color: #FFE2C4;
+    border-radius: 15px;
+}
+
+.form-label{
+    color: #593817;
+}
+
+.form-control, .form-select{
+    border-color: #E5903B;
+}
+

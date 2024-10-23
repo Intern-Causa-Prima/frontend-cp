@@ -1,207 +1,312 @@
-/*terapin ke semua elemen di halaman*/
+/*terapin ke semua elemen di setiap halaman*/
 * {
     font-family: "Poppins", system-ui;
 }
 
-body, html {
+body{
     height: 100%;
     margin: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-fluid{
-    padding: 20px 0px;
-}
-
-/*background navbar*/
-.navbar{
-    background-color: #FEA041 !important;
-    padding: 0;
-}
-
-.navbar-brand{
-    padding: 0px 20px;
-    margin: 0;
-}
-
-/*terapin ke keempat item navbar*/
-.nav-link{
-    color: #fff6ec;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 20px !important;
-}
-
-.nav-link:hover{
-    color: #593817;
-}
-
-/*terapin ke item navbar 'Home'*/
-.nav-link.active{
-    color: #593817 !important;
-}
-
-/*terapin ke dropdown menu*/
-.dropdown-menu.show{
-    background-color: #FFF6EC;
-    border: 0;
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-collapse.collapse.show{
-    background-color: #FEA041;
-    }
-
-/*terapin ke dropdown item*/
-.dropdown-item{
-    font-size: 16px;
-    font-weight: 400;
-    padding: 10px 20px;
-}
-
-.dropdown-item:hover{
-    background-color: #FEA041;
-}
-
-/*terapin ke icon navbar toggler*/
-.navbar-toggler{
-    border: none;
-    padding: 10px 20px;
-}
-
-.navbar-toggler:focus{
-    box-shadow: none;
-}
-
-.navbar-toggler-icon{
-    color: #593817;
-}
-
-h2{
-    font-weight: 600;
-    font-size: 35px;
-    color: #593817;
-}
-
-p{
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.card-title{
-    text-align: center;
-}
-
-.col-sm-6.p-3{
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+img, video, svg {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h1{
     font-weight: 700; 
-    font-size: 60px;
+    font-size: 4rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #593817;
 }
 
 h3{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.6rem;
 }
 
-.icon-check{
-    width: 30px;
-    height: 30px;
-}
-
-.col-sm-4.p-3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn.btn-primary{
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: #E86F33;
-    border: none;
-    width: fit-content;
-}
-
-.btn.btn-primary:hover{
-    background-color: #ae5326;
-}
-
-.card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card{
-    border-radius: 15px;
-    border: none;
-}
-
-.card-img-top{
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-h5.card-title{
-    font-size: 20px;
-    text-align: start;
-
-}
-
-a.card-link{
-    font-size: 13px;
+p{
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 a{
     text-decoration: none;
+    font-size: 0.8rem;
     color: #593817;
 }
 
-.card:hover{
-    box-shadow: 0 4px 8px 0 rgba(89, 56, 23, 0.5);
+/*ukuran container global*/
+.container{
+    width: 100%;
+    height: 100%;
 }
 
-.card-img{
-    width: 69px;
-    height: 69px;
+/*warna teks item navbar*/
+.nav-link{
+    color: #fff6ec;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.card-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+/*pengecualian untuk warna teks item navbar 'Home'*/
+.nav-link.active{
+    color: #593817 !important;
 }
 
-.contact-icon{
-    width: 40px;
-    height: 40px;
+/*ketika kursor diarahin ke item navbar dan diklik, warna teks akan berubah*/
+.nav-link:hover, .nav-link:active{
+    color: #593817 !important;
 }
 
-.logo-sekolah{
-    width: 200px;
+/*ketika dropdown lagi terbuka, warna teks 'Programs' tetap sama ketika sudah diklik*/
+.nav-link.show{
+    color: #593817 !important;
 }
 
-.row.g-3{
-    padding: 50px 100px;
-    gap: 10px;
+/*ketika item navbar udah diklik warnanya akan kembali seperti semula*/
+.nav-link:visited{
+    color: #FFF6EC;
+}
+
+/*warna background dropdown menu*/
+.dropdown-menu.show{
+    background-color: #FFF6EC;
+}
+
+/*ukuran teks navbar di item dropdown*/
+.dropdown-item{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*ketika kursor diarahin ke item dropdown, warna background akan berubah*/
+.dropdown-item:hover{
+    background-color: #FEA041;
+}
+
+/*menghilangkan shadow di ikon navbar-toggler ketika diklik (ikon garis tiga)*/
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/*warna ikon navbar-toggler (garis tiga)*/
+.navbar-toggler-icon{
+    color: #593817;
+}
+
+/*layout teks di banner*/
+.carousel-caption{ 
+    color: #FFF6EC;
+    line-height: 10rem;
+}
+
+/*ukuran judul h1 di banner*/
+.carousel-caption > h1{
+    line-height: 6rem;
+}
+
+/*ukuran slogan di banner*/
+.carousel-caption > p{
+    font-weight: 500; 
+    font-size: 1.8rem;
+}
+
+/*warna background*/
+.bg-white{
+    background-color: white;
+}
+
+/*warna background*/
+.bg-cream{
     background-color: #FFE2C4;
-    border-radius: 15px;
 }
 
+/*warna background*/
+.bg-orange{
+    background-color: #FEA041;
+}
+
+/*warna teks di card what children learn*/
+.card-body.p-4 > .card-title, .card-body.p-4 > .card-text{
+    color: #FFF6EC;
+}
+
+/*warna background card inside classroom*/
+#bg-inside-classroom{
+    background-color: #E86F33;
+}
+
+/*warna background card outside play*/
+#bg-outdoor-play{
+    background-color: #FEA041;
+}
+
+/*warna teks list fasilitas*/
+#list-facility{
+    color: black;
+}
+
+/*ukuran ikon check di bagian list fasilitas*/
+.icon-check{
+    width: 2rem;
+    height: 2rem;
+}
+
+/*warna background card program sekolah*/
+.bg-programs{
+    background-color: #FEA041;
+}
+
+/*warna background card news*/
+.bg-news{
+    background-color: #FFF1E3;
+}
+
+/*warna background dan teks di button*/
+.btn.btn-primary{
+    background-color: #E86F33;
+    color: #fff6ec;
+}
+
+/*ketika kursor diarahin ke button, warnanya jadi berubah*/
+.btn.btn-primary:hover{
+    background-color: #ae5326;
+}
+
+/*ketika kursor diarahin ke card, akan muncul shadow*/
+.card:hover{
+    box-shadow: 0 0.24rem 0.5rem 0 rgba(89, 56, 23, 0.5);
+}
+
+/*modifikasi card-title*/
+.card-title{
+    color: #593817;
+}
+
+/*ukuran teks judul berita dan teks header testimoni*/
+.headline-news, .testimonial{
+    font-size: 1.3rem;
+}
+
+/*ukuran teks tanggal dan konten news*/
+.card-text.news{
+    font-size: 0.8rem;
+}
+
+/*warna background card testimoni*/
+.bg-testimonial{
+    background-color: #FFE2C4;
+}
+
+/*tinggi poto di bagian program*/
+#programs{
+    height: 21rem;
+}
+
+/*tinggi poto di bagian news*/
+#news{
+    height: 19rem;
+}
+
+/*tinggi poto di bagian gallery*/
+#gallery{
+    height: 15rem;
+}
+
+/*ukuran poto profil di testimoni*/
+.card-img{
+    width: 4rem;
+    height: 4rem;
+}
+
+/*ukuran ikon di footer*/
+.contact-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/*ukuran logo sekolah di footer*/
+.logo-sekolah{
+    width: 12rem;
+}
+
+/*gmaps di footer*/
+.map{
+    width: 100%; 
+    height: 50%;
+}
+
+/*modif background form*/
+.row.g-3{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background-color: #FFE2C4;
+}
+
+/*warna teks form label*/
 .form-label{
     color: #593817;
 }
 
+/*warna border kolom form*/
 .form-control, .form-select{
     border-color: #E5903B;
 }
 
+/*ukuran banner di halaman utama*/
+.img-slide-home{
+    height: 50rem;
+}
+
+/*ukuran banner di halaman selain halaman utama*/
+.img-slide{
+    height: 25rem;
+}
+
+.page-link{
+    color: #593817;
+}
+
+.page-link:hover{
+    color: #593817;
+}
+
+.page-item.active .pagination{
+    background-color: #593817;
+}
+
+/* untuk layar handphone */
+@media only screen and (max-width: 425px) {
+    [class*="container"] {
+        max-width: 100%;
+    }
+
+}
+
+/* untuk layar tablet */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* untuk layar laptop */
+@media only screen and (max-width: 1440px) {
+    
+}
+
+/*untuk layar monitor yang lebih besar*/
+@media only screen and (max-width: 2560px) {
+    
+}
+
+
+/*tampilannya kurang bagus dengan width di range 576px - 991px*/

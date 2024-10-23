@@ -12,212 +12,162 @@
         <link rel="icon" type="image/x-icon" href="/img/ico/logo-tanpa-tulisan.ico">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- NAVBAR -->
-            <div class="container" style="padding: 10px 10px;">
-                <a class="navbar-brand" href="index.html">
-                    <img src="/img/Logo-CP2.png" alt="Causa Prima School" height="100px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Programs
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="playschool.html">Playschool Program ></a></li>
-                                <li><a class="dropdown-item" href="kindergarten.html">Kindergarten Program ></a></li>
-                                <li><a class="dropdown-item" href="primary-level.html">Primary Level Program ></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news-item.html">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="enrollment.html">Enrollment</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+        <header> <!-- HEADER, BERUPA NAVBAR -->
+            <nav class="navbar p-0 navbar-expand-lg bg-orange"> <!-- NAVBAR -->
+                <div class="container d-flex flex-row p-2">
+                    <a class="navbar-brand px-3 py-0 m-0" href="/">
+                        <img src="/img/Logo-CP2.png" alt="Causa Prima School" height="100px">
+                    </a>
+                    <button class="navbar-toggler border-0 px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active py-2 px-3" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle py-2 px-3" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                                </a>
+                                <ul class="dropdown-menu border-0 p-0 m-0 rounded-0">
+                                    <li><a class="dropdown-item py-2 px-3" href="playschool.html">Playschool Program ></a></li>
+                                    <li><a class="dropdown-item py-2 px-3" href="kindergarten.html">Kindergarten Program ></a></li>
+                                    <li><a class="dropdown-item py-2 px-3" href="primary-level.html">Primary Level Program ></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="news-item.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="enrollment.html">Enrollment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <main> <!-- BAGIAN UTAMA -->
-            <div class="slider-container rev_slider_wrapper"> <!-- BANNER -->
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/banner.jpg" class="d-block w-100">
-                            <div class="carousel-caption d-sm-flex flex-column align-items-center" style="top: 30%; color: #FFF6EC;">
-                                <h1>Stay Updated with Our<br>Latest News</h1>
-                            </div>
-                        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/gedung-sekolah.jpg" class="img-slide d-block w-100 object-fit-cover" height="30rem" style="filter: brightness(50%)contrast(50%);" alt="...">
+                    <div class="carousel-caption d-block w-100 top-50 start-50 end-0 bottom-0 pt-0 translate-middle">
+                        <h1>Stay Updated with Our Latest News</h1>
                     </div>
                 </div>
             </div>
-            <section> <!-- BERITA SEKOLAH -->
-                <div class="container p-5">
-                    <div class="row"> <!-- BARIS PERTAMA -->
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 1 -->
-                                <img src="img/news-1.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
+            <section class="bg-white"> <!-- BERITA SEKOLAH -->
+                <div class="container p-5 d-flex flex-column justify-content-center">
+                    <div class="row">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-news"> <!-- BERITA 1 -->
+                                <img src="img/news-1.jpg" id="news" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <p class="card-text news">30 September 2024</p>
+                                    <h3 class="card-title text-start mb-1 headline-news">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h3>
+                                    <p class="card-text news">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-1.html" class="card-link"><b>Read more >></b></a>
+                                    <a href="news-detail.html" class="card-link"><b>Read more >></b></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 2 -->
-                                <img src="img/news-2.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-news"> <!-- BERITA 2 -->
+                                <img src="img/news-2.jpg" id="news" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <p class="card-text news">30 September 2024</p>
+                                    <h3 class="card-title text-start mb-1 headline-news">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h3>
+                                    <p class="card-text news">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-2.html" class="card-link"><b>Read more >></b></a>
+                                    <a href="news-detail.html" class="card-link"><b>Read more >></b></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 3 -->
-                                <img src="img/news-3.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-news"> <!-- BERITA 3 -->
+                                <img src="img/news-3.jpg" id="news" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <p class="card-text news">30 September 2024</p>
+                                    <h3 class="card-title text-start mb-1 headline-news">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h3>
+                                    <p class="card-text news">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-3.html" class="card-link"><b>Read more >></b></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row"> <!-- BARIS KEDUA -->
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 1 -->
-                                <img src="img/news-1.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-1.html" class="card-link"><b>Read more >></b></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 2 -->
-                                <img src="img/news-2.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-2.html" class="card-link"><b>Read more >></b></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 3 -->
-                                <img src="img/news-3.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-3.html" class="card-link"><b>Read more >></b></a>
+                                    <a href="news-detail.html" class="card-link"><b>Read more >></b></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row"> <!-- BARIS KETIGA -->
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 1 -->
-                                <img src="img/news-1.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-1.html" class="card-link"><b>Read more >></b></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 2 -->
-                                <img src="img/news-2.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-2.html" class="card-link"><b>Read more >></b></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 3 -->
-                                <img src="img/news-3.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-3.html" class="card-link"><b>Read more >></b></a>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="container p-3 d-flex align-items-center justify-content-center">
+                            <!-- Pagination -->
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="-2" aria-disabled="true">Previous</a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#" tabindex="-1">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="0">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="1">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" tabindex="2">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    
                 </div>
             </section>
         </main>
-        <footer style="background-color: #FEA041;"> <!-- FOOTER -->
-            <div class="container p-5">
+        <footer id="footer" class="bg-orange"> <!-- FOOTER -->
+            <div class="container p-5 d-flex flex-column justify-content-center">
                 <div class="row">
-                    <div class="col-sm-4 p-3 align-items-start">
+                    <div class="col-md-4 p-3">
                         <div class="container"> <!-- KONTAK -->
                             <h2>Contacts</h2>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="https://www.instagram.com/sekolahcausaprima/">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="https://www.instagram.com/sekolahcausaprima/">
                                 <img src="svg/insta-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">sekolahcausaprima</p>
+                                <p class="mb-0">sekolahcausaprima</p>
                             </a>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="https://wa.me/+6285878573735">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="https://wa.me/+6285878573735">
                                 <img src="svg/wa-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">0858 7857 3735</p>
+                                <p class="mb-0">0858 7857 3735</p>
                             </a>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="http://www.youtube.com/@sekolahcausaprima7404">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="http://www.youtube.com/@sekolahcausaprima7404">
                                 <img src="svg/youtube-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">Sekolah Causa Prima</p>
+                                <p class="mb-0">Sekolah Causa Prima</p>
                             </a>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3">
                                 <img src="svg/phone-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">0251 840 1612</p>
+                                <p class="mb-0">0251 840 1612</p>
+                            </a>
+                            <h2>Enroll Now!</h2>
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="enrollment.html">
+                                <img src="svg/ant-design_form-outlined.svg" class="contact-icon" alt="">
+                                <p class="mb-0">Enrollment form</p>
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-4 p-3 align-items-start">
+                    <div class="col-md-4 p-3">
                         <div class="container"> <!-- LOKASI -->
                             <h2>Location</h2> 
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.4922403434757!2d106.77485637475361!3d-6.571023093422329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e3fff28dc9%3A0xc69d7e72b567656a!2sTK%20%26%20SD%20Sekolah%20Causa%20Prima%20Bogor!5e1!3m2!1sen!2sid!4v1728528580508!5m2!1sen!2sid" 
-                            style="border: 0; width: inherit; height: 200px; margin-bottom: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            class="map border-0 mb-3" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             <p>Jl. Bambu Raya No.42, RT.5/RW.11, Cilendek Tim., Kec. Bogor Bar., Kota Bogor, Jawa Barat 16112</p>
                         </div>
                     </div>
-                    <div class="col-sm-4 p-3 align-items-start"">
-                        <div class="container d-flex flex-column align-items-center"> <!-- LOGO SEKOLAH -->
+                    <div class="col-md-4 p-3">
+                        <div class="container d-flex flex-column align-items-center gap-3"> <!-- LOGO SEKOLAH -->
                             <img src="img/logo-yayasan-cp-hitam-putih-2.png" class="logo-sekolah" alt="">
                             <img src="img/TK-Causa-Prima.png" class="logo-sekolah" alt="">
                             <img src="img/SD-Causa-Prima.png" class="logo-sekolah" alt="">
@@ -227,5 +177,42 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            // 1. Ambil semua artikel di halaman
+            const articles = document.querySelectorAll('.article');
+    
+            // 2. Tentukan berapa banyak artikel yang akan ditampilkan per halaman
+            const itemsPerPage = 2; // Misalnya, 2 artikel per halaman
+    
+            // 3. Ambil elemen pagination (semua tombol link halaman)
+            const paginationLinks = document.querySelectorAll('.page-link');
+    
+            // 4. Fungsi untuk menampilkan artikel berdasarkan nomor halaman
+            function showPage(page) {
+                // Loop setiap artikel untuk mengatur tampil atau sembunyinya
+                articles.forEach((article, index) => {
+                    // Jika index artikel berada dalam range halaman yang dipilih
+                    if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+                    article.style.display = 'block'; // Tampilkan artikel
+                    } else {
+                    article.style.display = 'none'; // Sembunyikan artikel
+                    }
+                });
+            }
+    
+            // 5. Panggil fungsi showPage() untuk menampilkan halaman pertama saat awal dibuka
+            showPage(1);
+    
+            // 6. Tambahkan event listener ke setiap link pagination
+            paginationLinks.forEach((link, index) => {
+            // Saat tombol pagination diklik
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Cegah halaman refresh saat tombol diklik
+    
+                    // Pindah ke halaman sesuai link yang diklik (index + 1)
+                    showPage(index + 1);
+                });
+            });
+        </script>
     </body>
 </html>

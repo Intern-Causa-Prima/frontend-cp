@@ -12,63 +12,63 @@
         <link rel="icon" type="image/x-icon" href="/img/ico/logo-tanpa-tulisan.ico">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- NAVBAR -->
-            <div class="container" style="padding: 10px 10px;">
-                <a class="navbar-brand" href="index.html">
-                    <img src="/img/Logo-CP2.png" alt="Causa Prima School" height="100px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Programs
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="playschool.html">Playschool Program ></a></li>
-                                <li><a class="dropdown-item" href="kindergarten.html">Kindergarten Program ></a></li>
-                                <li><a class="dropdown-item" href="primary-level.html">Primary Level Program ></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news-item.html">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="enrollment.html">Enrollment</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+        <header> <!-- HEADER, BERUPA NAVBAR -->
+            <nav class="navbar p-0 navbar-expand-lg bg-orange"> <!-- NAVBAR -->
+                <div class="container d-flex flex-row p-2">
+                    <a class="navbar-brand px-3 py-0 m-0" href="/">
+                        <img src="/img/Logo-CP2.png" alt="Causa Prima School" height="100px">
+                    </a>
+                    <button class="navbar-toggler border-0 px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active py-2 px-3" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle py-2 px-3" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Programs
+                                </a>
+                                <ul class="dropdown-menu border-0 p-0 m-0 rounded-0">
+                                    <li><a class="dropdown-item py-2 px-3" href="playschool.html">Playschool Program ></a></li>
+                                    <li><a class="dropdown-item py-2 px-3" href="kindergarten.html">Kindergarten Program ></a></li>
+                                    <li><a class="dropdown-item py-2 px-3" href="primary-level.html">Primary Level Program ></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="news-item.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="enrollment.html">Enrollment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 px-3" href="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <main> <!-- BAGIAN UTAMA -->
-            <div class="slider-container rev_slider_wrapper"> <!-- BANNER -->
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/img-page-utama.png" class="d-block w-100">
-                            <div class="carousel-caption d-sm-flex flex-column align-items-center" style="top: 25%; color: #FFF6EC;">
-                                <h1>Welcome to<br>Causa Prima School</h1>
-                                <p style="font-weight: 500; font-size: 30px;">"Great Place to Grow"</p>
-                            </div>
+            <div class="carousel" id="carouselExampleCaptions">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/gedung-sekolah.jpg" class="img-slide-home d-block w-100 object-fit-cover" style="filter: brightness(50%)contrast(50%);" alt="...">
+                        <div class="carousel-caption d-block w-100 top-50 start-50 end-0 bottom-0 pt-0 translate-middle">
+                            <h1>Welcome to<br>Causa Prima School</h1>
+                            <p>"Great Place to Grow"</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <section> <!-- BAGIAN PROFIL SEKOLAH -->
-                <div class="container p-5">
-                    <div class="row">
-                        <div class="col-md-7 p-3" style="align-self: center;">
+            <section class="bg-white"> <!-- BAGIAN PROFIL SEKOLAH -->
+                <div class="container p-5 d-flex flex-row justify-content-center">
+                    <div class="row align-items-center">
+                        <div class="col-md-7 p-3">
                             <div class="row p-3">
                                 <div class="container p-3"> <!-- ABOUT US -->
                                     <h2>About Us</h2>
@@ -93,102 +93,96 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 p-3" style="align-self: center;">
+                        <div class="col-md-5 p-3">
                             <div class="container"> <!-- IMAGE -->
-                                <img src="img/news1.jpg" alt="Profil Causa Prima School" style="height: inherit; width: inherit; border-radius: 20px;">
+                                <img src="img/news1.jpg" alt="Profil Causa Prima School" class="rounded-4">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section style="background-color: #FFE2C4;"> <!-- WHAT CHILDREN LEARN? -->
-                <div class="container p-5">
+            <section class="bg-cream"> <!-- WHAT CHILDREN LEARN? -->
+                <div class="container p-5 d-flex flex-column justify-content-center">
                     <div class="row">
                         <div class="container p-3">
-                            <h2 style="text-align: center;">What Children Learn?</h2>
+                            <h2 class="text-center">What Children Learn?</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 p-3">
-                            <div class="card" style="background-color: #E86F33; width: 350px;">
-                                <div class="card-body p-4"> <!-- INSIDE CLASSROOM -->
-                                    <h3 class="card-title" style="color: #FFF6EC;">Inside Classroom</h3> 
-                                    <p class="card-text" style="color: #FFF6EC;">
-                                        <img src="svg/uim_check.svg" alt="">Block, toys, manipulative <br>
-                                        <img src="svg/uim_check.svg" alt="">Science and Math skills <br>
-                                        <img src="svg/uim_check.svg" alt="">Pre-reading skills <br>
-                                        <img src="svg/uim_check.svg" alt="">Dramatic Play <br>
-                                        <img src="svg/uim_check.svg" alt="">Language and Social skills <br>
-                                        <img src="svg/uim_check.svg" alt="">Imagination and Fine motor skills <br>
-                                        <img src="svg/uim_check.svg" alt="">Empathy and Self control <br>
-                                        <img src="svg/uim_check.svg" alt="">Problem solving skills <br>
-                                        <img src="svg/uim_check.svg" alt="">Self-esteem and Confidence
-                                    </p>
+                        <div class="col-md-6 p-3 d-flex justify-content-center">
+                            <div class="card border-0 rounded-4" id="bg-inside-classroom">
+                                <div class="card-body p-4 d-flex flex-column align-items-center"> <!-- INSIDE CLASSROOM -->
+                                    <h3 class="card-title">Inside Classroom</h3> 
+                                    <div class="card-text">
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Block, toys, manipulative</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Science and Math skills</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Pre-reading skills</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Dramatic Play</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Language and Social skills</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Imagination and Fine motor skills</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Empathy and Self control</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Problem solving skills</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Self-esteem and Confidence</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 p-3">
-                            <div class="card" style="background-color: #FEA041; width: 350px;">
-                                <div class="card-body p-4"> <!-- OUTDOOR PLAY -->
-                                    <h3 class="card-title" style="color: #FFF6EC;">Outdoor Play</h3> 
-                                    <p class="card-text" style="color: #FFF6EC;">
-                                        <img src="svg/uim_check.svg" alt="">Large muscle and motor skills <br>
-                                        <img src="svg/uim_check.svg" alt="">Social skills <br>
-                                        <img src="svg/uim_check.svg" alt="">Listening to others <br>
-                                        <img src="svg/uim_check.svg" alt="">Handling conflict <br>
-                                        <img src="svg/uim_check.svg" alt="">Eye-hand coordination <br>
-                                        <img src="svg/uim_check.svg" alt="">Imagination
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section> <!-- FASILITAS SEKOLAH -->
-                <div class="container p-5">
-                    <div class="row">
-                        <div class="container p-3">
-                            <h2 style="text-align: center;">Facilities</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 p-3"> <!-- FOTO FASILITAS -->
-                            <div class="container" style="display: flex; align-items: center; flex-direction: column;">
-                                <img src="img/fasilitas-komp.jpg" alt="Fasilitas di dalam Kelas" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                                <img src="img/fasilitas-outdoor.jpg" alt="Fasilitas Outdoor" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
-                            </div>
-                        </div>
-                        <div class="col-sm-6 p-3"> <!-- LIST FASILITAS -->
-                            <div class="container" style="display: flex; align-items: center;">
-                                <div class="card-text" style="color: black;">
-                                    <div class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 20px;">
-                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
-                                        <p style="margin-bottom: 0px;">Bilingual classes with English daily basis</p>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 20px;">
-                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
-                                        <p style="margin-bottom: 0px;">Indoor and outdoor play area</p>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 20px;">
-                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
-                                        <p style="margin-bottom: 0px;">Clean and air conditioned classrooms</p>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 20px;">
-                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
-                                        <p style="margin-bottom: 0px;">Comfortable place for outdoor activities</p>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 20px;">
-                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
-                                        <p style="margin-bottom: 0px;">Computer and Audio visual room with TV and projector</p>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 20px;">
-                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
-                                        <p style="margin-bottom: 0px;">Reading corner/library with many reading stuff in every class</p>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 0px;">
-                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
-                                        <p style="margin-bottom: 0px;">CCTV cameras in all classroom for safety and monitoring</p>
+                        <div class="col-md-6 p-3 d-flex justify-content-center">
+                            <div class="card border-0 rounded-4" id="bg-outdoor-play">
+                                <div class="card-body p-4 d-flex flex-column align-items-center"> <!-- OUTDOOR PLAY -->
+                                    <h3 class="card-title">Outdoor Play</h3> 
+                                    <div class="card-text">
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Large muscle and motor skills</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Social skills</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Listening to others</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Handling conflict</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Eye-hand coordination</p>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center mb-1 gap-1">
+                                            <img src="svg/uim_check.svg" alt="">
+                                            <p class="mb-0">Imagination</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -196,175 +190,229 @@
                     </div>
                 </div>
             </section>
-            <section style="background-color: #FFE2C4;"> <!-- PROGRAM SEKOLAH -->
-                <div class="container p-5">
+            <section class="bg-white"> <!-- FASILITAS SEKOLAH -->
+                <div class="container p-5 d-flex flex-column justify-content-center">
                     <div class="row">
                         <div class="container p-3">
-                            <h2 style="text-align: center;">Our Programs</h2>
+                            <h2 class="text-center">Facilities</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FEA041; width: 18rem;"> <!-- PLAYSCHOOL -->
-                                <img src="img/playschool.jpg" class="card-img-top" alt="Playschool Program">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="color: #593817;">Playschool</h3>
-                                    <a href="playschool.html" class="btn btn-primary">See more</a>
-                                </div>
+                        <div class="col-md-6 p-3 d-flex justify-content-center"> <!-- FOTO FASILITAS -->
+                            <div class="container p-3 d-flex justify-content-center align-items-center flex-column">
+                                <img src="img/fasilitas-komp.jpg" alt="Fasilitas di dalam Kelas" class="rounded-top-4">
+                                <img src="img/fasilitas-outdoor.jpg" alt="Fasilitas Outdoor" class="rounded-bottom-4">
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FEA041; width: 18rem;"> <!-- KINDERGARTEN -->
-                                <img src="img/kindergerten.jpg" class="card-img-top" alt="Kindergarten Program">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="color: #593817;">Kindergarten</h3>
-                                    <a href="kindergarten.html" class="btn btn-primary">See more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FEA041; width: 18rem;"> <!-- PRIMARY LEVEL -->
-                                <img src="img/primary-level.jpg" class="card-img-top" alt="Primary Level Program">
-                                <div class="card-body">
-                                    <h3 class="card-title" style="color: #593817;">Primary Level</h3>
-                                    <a href="primary-level.html" class="btn btn-primary">See more</a>
+                        <div class="col-md-6 p-3 d-flex justify-content-center" > <!-- LIST FASILITAS -->
+                            <div class="container d-flex justify-content-center align-items-center flex-column">
+                                <div class="card-text" id="list-facility">
+                                    <div class="d-flex flex-row align-items-center mb-3 gap-3">
+                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
+                                        <p class="mb-0">Bilingual classes with English daily basis</p>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-3 gap-3">
+                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
+                                        <p class="mb-0">Indoor and outdoor play area</p>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-3 gap-3">
+                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
+                                        <p class="mb-0">Clean and air conditioned classrooms</p>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-3 gap-3">
+                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
+                                        <p class="mb-0">Comfortable place for outdoor activities</p>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-3 gap-3">
+                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
+                                        <p class="mb-0">Computer and Audio visual room with TV and projector</p>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-3 gap-3">
+                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
+                                        <p class="mb-0">Reading corner/library with many reading stuff in every class</p>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center mb-0 gap-3">
+                                        <img src="svg/simple-line-icons_check.svg" class="icon-check" alt="">
+                                        <p class="mb-0">CCTV cameras in all classroom for safety and monitoring</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section> <!-- BERITA SEKOLAH -->
-                <div class="container p-5">
+            <section class="bg-cream"> <!-- PROGRAM SEKOLAH -->
+                <div class="container p-5 d-flex flex-column justify-content-center">
                     <div class="row">
                         <div class="container p-3">
-                            <h2 style="text-align: center;">Read Our Latest News</h2>
+                            <h2 class="text-center">Our Programs</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 1 -->
-                                <img src="img/news-1.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-programs"> <!-- PLAYSCHOOL -->
+                                <img src="img/playschool.jpg" id="programs" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="Playschool Program">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h3 class="card-title text-center">Playschool</h3>
+                                    <a href="playschool.html" class="btn btn-primary d-flex justify-content-center border-0 rounded-5 px-4 py-2">
+                                        See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-programs"> <!-- KINDERGARTEN -->
+                                <img src="img/kindergerten.jpg" id="programs" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="Kindergarten Program">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h3 class="card-title text-center">Kindergarten</h3>
+                                    <a href="kindergarten.html" class="btn btn-primary d-flex justify-content-center border-0 rounded-5 px-4 py-2">
+                                        See more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-programs"> <!-- PRIMARY LEVEL -->
+                                <img src="img/primary-level.jpg" id="programs" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="Primary Level Program">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h3 class="card-title text-center">Primary Level</h3>
+                                    <a href="primary-level.html" class="btn btn-primary d-flex justify-content-center border-0 rounded-5 px-4 py-2">
+                                        See more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white"> <!-- BERITA SEKOLAH -->
+                <div class="container p-5 d-flex flex-column justify-content-center">
+                    <div class="row">
+                        <div class="container p-3">
+                            <h2 class="text-center">Read Our Latest News</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-news"> <!-- BERITA 1 -->
+                                <img src="img/news-1.jpg" id="news" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <p class="card-text news">30 September 2024</p>
+                                    <h3 class="card-title text-start mb-1 headline-news">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h3>
+                                    <p class="card-text news">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-1.html" class="card-link"><b>Read more >></b></a>
+                                    <a href="news-detail.html" class="card-link"><b>Read more >></b></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 2 -->
-                                <img src="img/news-2.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-news"> <!-- BERITA 2 -->
+                                <img src="img/news-2.jpg" id="news" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <p class="card-text news">30 September 2024</p>
+                                    <h3 class="card-title text-start mb-1 headline-news">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h3>
+                                    <p class="card-text news">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-2.html" class="card-link"><b>Read more >></b></a>
+                                    <a href="news-detail.html" class="card-link"><b>Read more >></b></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFF1E3;"> <!-- BERITA 3 -->
-                                <img src="img/news-3.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
-                                    <p class="card-text" style="font-size: 13px;">30 September 2024</p>
-                                    <h5 class="card-title" style="color: #593817;">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h5>
-                                    <p class="card-text" style="font-size: 13px;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-news"> <!-- BERITA 3 -->
+                                <img src="img/news-3.jpg" id="news" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <p class="card-text news">30 September 2024</p>
+                                    <h3 class="card-title text-start mb-1 headline-news">Lorem ipsum dolor sit amet, consectetur, adipiscing elit...</h3>
+                                    <p class="card-text news">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
-                                    <a href="news-detail-3.html" class="card-link"><b>Read more >></b></a>
+                                    <a href="news-detail.html" class="card-link"><b>Read more >></b></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="container p-3" style="display: flex; align-items: center; justify-content: center;">
-                            <a href="news-item.html" class="btn btn-primary">See more</a>
+                        <div class="container p-3 d-flex align-items-center justify-content-center">
+                            <a href="news-item.html" class="btn btn-primary d-flex justify-content-center border-0 rounded-5 px-4 py-2">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section style="background-color: #FFE2C4;"> <!-- GALLERY -->
-                <div class="container p-5">
+            <section class="bg-cream"> <!-- GALLERY -->
+                <div class="container p-5 d-flex flex-column justify-content-center">
                     <div class="row">
                         <div class="container p-3">
-                            <h2 style="text-align: center;">Gallery</h2>
+                            <h2 class="text-center">Gallery</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 p-3">
-                            <div class="card"> <!-- GALLERY 1 -->
-                                <img src="img/gallery-1.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4"> <!-- GALLERY 1 -->
+                                <img src="img/gallery-1.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card"> <!-- GALLERY 2 -->
-                                <img src="img/gallery-2.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4"> <!-- GALLERY 2 -->
+                                <img src="img/gallery-2.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card"> <!-- GALLERY 3 -->
-                                <img src="img/gallery-3.jpg" class="card-img-top" alt="">
-                                <div class="card-body" style="align-items: start;">
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4"> <!-- GALLERY 3 -->
+                                <img src="img/gallery-3.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                                <div class="card-body d-flex flex-column align-items-start">
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="container p-3" style="display: flex; align-items: center; justify-content: center;">
-                            <a href="gallery.html" class="btn btn-primary">See more</a>
+                        <div class="container p-3 d-flex align-items-center justify-content-center">
+                            <a href="gallery.html" class="btn btn-primary d-flex justify-content-center border-0 rounded-5 px-4 py-2">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section> <!-- TESTIMONI -->
-                <div class="container p-5">
+            <section class="bg-white"> <!-- TESTIMONI -->
+                <div class="container p-5 d-flex flex-column justify-content-center">
                     <div class="row">
                         <div class="container p-3">
-                            <h2 style="text-align: center;">Our Testimonials</h2>
+                            <h2 class="text-center">Our Testimonials</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFE2C4;"> <!-- TESTIMONI 1 -->
-                                <div class="card-header">
-                                    <img src="img/testi-1.jpg" class="card-img rounded-circle" alt="">
-                                    <h5 class="card-title" style="color: #593817; margin: 0;">Mama Yuliana</h5>
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-testimonial"> <!-- TESTIMONI 1 -->
+                                <div class="card-header d-flex flex-row align-items-center gap-3">
+                                    <img src="img/testi-1.jpg" class="card-img img-fluid rounded-circle object-fit-cover" alt="">
+                                    <h3 class="card-title text-start m-0 testimonial">Mama Yuliana</h3>
                                 </div>
-                                <div class="card-body" style="align-items: start;">
+                                <div class="card-body d-flex flex-column align-items-start">
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFE2C4;"> <!-- TESTIMONI 2 -->
-                                <div class="card-header">
-                                    <img src="img/testi-2.jpg" class="card-img rounded-circle" alt="">
-                                    <h5 class="card-title" style="color: #593817; margin: 0;">Mama Icha</h5>
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-testimonial"> <!-- TESTIMONI 2 -->
+                                <div class="card-header d-flex flex-row align-items-center gap-3">
+                                    <img src="img/testi-2.jpg" class="card-img img-fluid rounded-circle object-fit-cover" alt="">
+                                    <h3 class="card-title text-start m-0 testimonial">Mama Icha</h3>
                                 </div>
-                                <div class="card-body" style="align-items: start;">
+                                <div class="card-body d-flex flex-column align-items-start">
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 p-3">
-                            <div class="card" style="background-color: #FFE2C4;"> <!-- TESTIMONI 3 -->
-                                <div class="card-header">
-                                    <img src="img/testi-3.jpg" class="card-img rounded-circle" alt="">
-                                    <h5 class="card-title" style="color: #593817; margin: 0;">Mama Ratna</h5>
+                        <div class="col-md-4 p-3">
+                            <div class="card border-0 rounded-4 bg-testimonial"> <!-- TESTIMONI 3 -->
+                                <div class="card-header d-flex flex-row align-items-center gap-3">
+                                    <img src="img/testi-3.jpg" class="card-img img-fluid rounded-circle object-fit-cover" alt="">
+                                    <h3 class="card-title text-start m-0 testimonial">Mama Ratna</h3>
                                 </div>
-                                <div class="card-body" style="align-items: start;">
+                                <div class="card-body d-flex flex-column align-items-start">
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel turpis consectetur, dignissim dolor nec, imperdiet arcu. Nam rhoncus cursus turpis, ut ultricies tortor tempor ac...</p>
                                 </div>
@@ -372,47 +420,52 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="container p-3" style="display: flex; align-items: center; justify-content: center;">
-                            <a href="enrollment.html" class="btn btn-primary">Enroll now!</a>
+                        <div class="container p-3 d-flex align-items-center justify-content-center">
+                            <a href="enrollment.html" class="btn btn-primary d-flex justify-content-center border-0 rounded-5 px-4 py-2">See more</a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer style="background-color: #FEA041;"> <!-- FOOTER -->
-            <div class="container p-5">
+        <footer id="footer" class="bg-orange"> <!-- FOOTER -->
+            <div class="container p-5 d-flex flex-column justify-content-center">
                 <div class="row">
-                    <div class="col-sm-4 p-3 align-items-start">
+                    <div class="col-md-4 p-3">
                         <div class="container"> <!-- KONTAK -->
                             <h2>Contacts</h2>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="https://www.instagram.com/sekolahcausaprima/">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="https://www.instagram.com/sekolahcausaprima/">
                                 <img src="svg/insta-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">sekolahcausaprima</p>
+                                <p class="mb-0">sekolahcausaprima</p>
                             </a>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="https://wa.me/+6285878573735">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="https://wa.me/+6285878573735">
                                 <img src="svg/wa-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">0858 7857 3735</p>
+                                <p class="mb-0">0858 7857 3735</p>
                             </a>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="http://www.youtube.com/@sekolahcausaprima7404">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="http://www.youtube.com/@sekolahcausaprima7404">
                                 <img src="svg/youtube-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">Sekolah Causa Prima</p>
+                                <p class="mb-0">Sekolah Causa Prima</p>
                             </a>
-                            <a class="d-flex flex-row align-items-center" style="gap: 15px; margin-bottom: 15px;" target="_blank" href="">
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3">
                                 <img src="svg/phone-icon.svg" class="contact-icon" alt="">
-                                <p style="margin-bottom: 0px;">0251 840 1612</p>
+                                <p class="mb-0">0251 840 1612</p>
+                            </a>
+                            <h2>Enroll Now!</h2>
+                            <a class="d-flex flex-row align-items-center text-decoration-none mb-3 gap-3" target="_blank" href="enrollment.html">
+                                <img src="svg/ant-design_form-outlined.svg" class="contact-icon" alt="">
+                                <p class="mb-0">Enrollment form</p>
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-4 p-3 align-items-start">
+                    <div class="col-md-4 p-3">
                         <div class="container"> <!-- LOKASI -->
                             <h2>Location</h2> 
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.4922403434757!2d106.77485637475361!3d-6.571023093422329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e3fff28dc9%3A0xc69d7e72b567656a!2sTK%20%26%20SD%20Sekolah%20Causa%20Prima%20Bogor!5e1!3m2!1sen!2sid!4v1728528580508!5m2!1sen!2sid" 
-                            style="border: 0; width: inherit; height: 200px; margin-bottom: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            class="map border-0 mb-3" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             <p>Jl. Bambu Raya No.42, RT.5/RW.11, Cilendek Tim., Kec. Bogor Bar., Kota Bogor, Jawa Barat 16112</p>
                         </div>
                     </div>
-                    <div class="col-sm-4 p-3 align-items-start"">
-                        <div class="container d-flex flex-column align-items-center"> <!-- LOGO SEKOLAH -->
+                    <div class="col-md-4 p-3">
+                        <div class="container d-flex flex-column align-items-center gap-3"> <!-- LOGO SEKOLAH -->
                             <img src="img/logo-yayasan-cp-hitam-putih-2.png" class="logo-sekolah" alt="">
                             <img src="img/TK-Causa-Prima.png" class="logo-sekolah" alt="">
                             <img src="img/SD-Causa-Prima.png" class="logo-sekolah" alt="">

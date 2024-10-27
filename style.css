@@ -20,7 +20,7 @@ img, video, svg {
 
 h1{
     font-weight: 700; 
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 h2{
@@ -273,29 +273,108 @@ a{
     height: 25rem;
 }
 
-.page-link{
-    color: #593817;
-}
-
-.page-link:hover{
-    color: #593817;
-}
-
-.page-item.active .pagination{
-    background-color: #593817;
-}
-
-/* untuk layar handphone */
-@media only screen and (max-width: 425px) {
-    [class*="container"] {
-        max-width: 100%;
-    }
-
+/*ukuran foto carousel di halaman programs*/
+.img-slide-carousel{
+    height: 50rem;
 }
 
 /* untuk layar tablet */
 @media only screen and (max-width: 768px) {
+    [class*="container"] {
+        max-width: 100%;
+        padding: 1rem !important;
+    }
     
+    h1{
+        font-size: 3rem;
+    }
+    .col-md-4{
+        min-width: 330px;
+        
+    }
+    .bbb{
+        max-width: 700px;
+        
+    }
+
+    .col-md-5{
+        width: 60%;
+    }
+    
+    .col-md-7{
+        width: 100%;
+    }
+    footer > div.container{
+        flex-direction: row;
+    }
+    footer > .col-md-4{
+        min-width: 300px;
+    }
+}
+
+/* untuk layar handphone */
+@media only screen and (max-width: 426px) {
+    [class*="container"] {
+        max-width: 100%;
+        padding: 0.8rem !important;
+    }
+
+    .bbb{
+        width: 100%;
+        
+    }
+
+    .logo-sekolah{
+        width: 90px;
+    }
+    
+    .img-slide-home{
+        height: 25rem;
+    }
+    
+    .col-md-5{
+        width: 100%;
+    }
+
+    .img-slide{
+        height: 18rem;
+    }
+
+    .img-slide-carousel{
+        height: 100%;
+    }
+
+    .row.g-3{
+        padding: 1.5rem;
+    }
+
+    /*layout teks di banner*/
+    .carousel-caption{ 
+        color: #FFF6EC;
+        line-height: 3rem;
+        top: 50% !important;
+        /* line-height: 5rem; */
+    }
+
+    /*ukuran judul h1 di banner*/
+    .carousel-caption > h1{
+        line-height: 2rem;
+        font-size: 30px;
+    }
+
+    /*ukuran slogan di banner*/
+    .carousel-caption > p{
+        /* font-weight: 300;  */
+        font-size: 1rem;
+    }
+
+    .navbar-brand img{
+        height: 50px;
+    }
+
+    footer > div.container{
+        padding: 0.5rem !important;
+    }
 }
 
 /* untuk layar laptop */

@@ -15,7 +15,7 @@
         <header> <!-- HEADER, BERUPA NAVBAR -->
             <nav class="navbar p-0 navbar-expand-lg bg-orange"> <!-- NAVBAR -->
                 <div class="container d-flex flex-row p-2">
-                    <a class="navbar-brand px-3 py-0 m-0" href="/">
+                    <a class="navbar-brand px-3 py-0 m-0" href="/index.html">
                         <img src="/img/Logo-CP2.png" alt="Causa Prima School" height="100px">
                     </a>
                     <button class="navbar-toggler border-0 px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +24,10 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active py-2 px-3" aria-current="page" href="/">Home</a>
+                                <a class="nav-link active py-2 px-3" aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle py-2 px-3" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle py-2 px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Programs
                                 </a>
                                 <ul class="dropdown-menu border-0 p-0 m-0 rounded-0">
@@ -71,13 +71,15 @@
                         <label for="inputName1" class="form-label">Student's Name</label>
                         <input type="text" class="form-control" id="inputName1" required>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputPlaceBirth" class="form-label">Place of Birth</label>
-                        <input type="text" class="form-control" id="inputPlaceBirth" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputDateofBirth" class="form-label">Date of Birth</label>
-                        <input type="date" class="form-control" name="date-of-birth" id="inputDateofBirth" required>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="inputPlaceBirth" class="form-label">Place of Birth</label>
+                            <input type="text" class="form-control" id="inputPlaceBirth" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputDateofBirth" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" name="date-of-birth" id="inputDateofBirth" required>
+                        </div>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Domicile Address</label>

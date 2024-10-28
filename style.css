@@ -278,58 +278,21 @@ a{
     height: 50rem;
 }
 
-/* untuk layar tablet */
-@media only screen and (max-width: 768px) {
-    [class*="container"] {
+/*media query untuk web responsive*/
+/* untuk layar handphone */
+@media only screen and (max-width: 426px) {
+    .container.p-5{
         max-width: 100%;
         padding: 1rem !important;
     }
-    
-    h1{
-        font-size: 3rem;
-    }
-    .col-md-4{
-        min-width: 330px;
-        
-    }
-    .bbb{
-        max-width: 700px;
-        
-    }
 
-    .col-md-5{
-        width: 60%;
-    }
-    
-    .col-md-7{
-        width: 100%;
-    }
-    footer > div.container{
-        flex-direction: row;
-    }
-    footer > .col-md-4{
-        min-width: 300px;
-    }
-}
-
-/* untuk layar handphone */
-@media only screen and (max-width: 426px) {
-    [class*="container"] {
-        max-width: 100%;
-        padding: 0.8rem !important;
-    }
-
-    .bbb{
-        width: 100%;
-        
-    }
-
-    .logo-sekolah{
-        width: 90px;
-    }
-    
     .img-slide-home{
-        height: 25rem;
+        height: 30rem;
+    }
+
+    nav > .container{
+        margin: 0;
+        max-width: 100%;
     }
     
     .col-md-5{
@@ -348,33 +311,129 @@ a{
         padding: 1.5rem;
     }
 
-    /*layout teks di banner*/
-    .carousel-caption{ 
-        color: #FFF6EC;
+    .carousel-caption{
         line-height: 3rem;
         top: 50% !important;
-        /* line-height: 5rem; */
     }
 
-    /*ukuran judul h1 di banner*/
     .carousel-caption > h1{
         line-height: 2rem;
         font-size: 30px;
     }
 
-    /*ukuran slogan di banner*/
     .carousel-caption > p{
-        /* font-weight: 300;  */
         font-size: 1rem;
     }
 
-    .navbar-brand img{
-        height: 50px;
+    
+}
+
+@media only screen and (max-width: 576px){
+    .logo-sekolah{
+        width: 10rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .logo-sekolah{
+        width: 10rem;
+    }
+
+    .card{
+        width: 24rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991.98px){
+    footer > .container.p-5 > .row > .col-md-4 > .container.d-flex{
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991.98px){
+    h1{
+        font-size: 3rem;
+    }
+    
+    .carousel-caption > h1{
+        line-height: 5rem;
+    }
+    
+    .carousel-caption{
+        line-height: 9rem;
+    }
+    
+    .carousel-caption > p{
+        font-size: 1.5rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.3rem;
+    }
+
+    /*ukuran teks judul berita dan teks header testimoni*/
+    .headline-news, .testimonial{
+        font-size: 1.2rem;
+    }
+
+
+}
+
+/* untuk layar tablet */
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    .container.p-5{
+        max-width: 100%;
+        padding: 2rem !important;
+    }
+
+    .col-md-4{
+        min-width: 330px;
+    }
+
+    .col-md-5{
+        width: 60%;
+    }
+    
+    .col-md-7{
+        width: 100%;
     }
 
     footer > div.container{
-        padding: 0.5rem !important;
+        flex-direction: row;
     }
+    
+    footer > .col-md-4{
+        min-width: 300px;
+    }
+
+    .row{
+        justify-content: center;
+    }
+
+    form .row{
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 1199.98px){
+    .container.p-5{
+        margin: 0;
+        max-width: 100%;
+    }
+
+    nav > .container{
+        margin: 0 48px 0 48px;
+        max-width: 100%;
+    }
+
 }
 
 /* untuk layar laptop */

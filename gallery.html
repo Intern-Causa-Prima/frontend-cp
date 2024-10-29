@@ -9,14 +9,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="/img/ico/logo-tanpa-tulisan.ico">
+        <link rel="icon" type="image/x-icon" href="/ico/logo-tanpa-tulisan.ico">
     </head>
     <body>
         <header> <!-- HEADER, BERUPA NAVBAR -->
             <nav class="navbar p-0 navbar-expand-lg bg-orange"> <!-- NAVBAR -->
                 <div class="container d-flex flex-row p-2">
                     <a class="navbar-brand px-3 py-0 m-0" href="/index.html">
-                        <img src="/img/Logo-CP2.png" alt="Causa Prima School" height="100px">
+                        <img src="/img/Logo-CP2.png" alt="Causa Prima School" class="img-nav">
                     </a>
                     <button class="navbar-toggler border-0 px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -56,93 +56,99 @@
         <main> <!-- BAGIAN UTAMA -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/gedung-sekolah.jpg" class="img-slide d-block w-100 object-fit-cover" height="30rem" style="filter: brightness(50%)contrast(50%);" alt="...">
-                    <div class="carousel-caption d-block w-100 top-50 start-50 end-0 bottom-0 pt-0 translate-middle">
+                    <img src="img/gedung-sekolah.jpg" class="img-slide d-block w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption d-block w-100 top-50 start-50 end-0 bottom-0 pt-0 px-3 translate-middle">
                         <h1>Take a Look at Our Activities</h1>
                     </div>
                 </div>
             </div>
-            <section class="bg-cream"> <!-- GALLERY -->
-                <div class="container p-5 d-flex flex-column justify-content-center">
-                    <div class="row">
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 1 -->
-                                <img src="img/gallery-1.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 2 -->
-                                <img src="img/gallery-2.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 3 -->
-                                <img src="img/gallery-3.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
+            <div class="container p-5 d-flex flex-column justify-content-center bg-cream">
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 1 -->
+                            <img src="img/gallery-1.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 1 -->
-                                <img src="img/gallery-1.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 2 -->
-                                <img src="img/gallery-2.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 3 -->
-                                <img src="img/gallery-3.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 2 -->
+                            <img src="img/gallery-2.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 1 -->
-                                <img src="img/gallery-1.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 3 -->
+                            <img src="img/gallery-3.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 2 -->
-                                <img src="img/gallery-2.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 1 -->
+                            <img src="img/gallery-1.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 p-3">
-                            <div class="card border-0 rounded-4"> <!-- GALLERY 3 -->
-                                <img src="img/gallery-3.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 2 -->
+                            <img src="img/gallery-2.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 3 -->
+                            <img src="img/gallery-3.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 1 -->
+                            <img src="img/gallery-1.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 2 -->
+                            <img src="img/gallery-2.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div class="card border-0 rounded-4"> <!-- GALLERY 3 -->
+                            <img src="img/gallery-3.jpg" id="gallery" class="card-img-top img-fluid rounded-top-4 object-fit-cover" alt="">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="container p-3 d-flex align-items-center justify-content-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center m-0 ">
+                                <li class="page-item"><a class="page-link border-end border-top-0 border-bottom-0 border-start-0 rounded-start-5 px-4 py-2" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link border-start border-top-0 border-bottom-0 border-end-0 rounded-end-5 px-4 py-2" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <section class="bg-cream"> <!-- GALLERY -->
             </section>
         </main>
         <footer id="footer" class="bg-orange"> <!-- FOOTER -->

@@ -51,6 +51,11 @@ a{
     height: 100%;
 }
 
+/*tinggi logo sekolah di navbar*/
+.img-nav{
+    height: 6rem;
+}
+
 /*warna teks item navbar*/
 .nav-link{
     color: #fff6ec;
@@ -176,6 +181,7 @@ a{
 .btn.btn-primary{
     background-color: #E86F33;
     color: #fff6ec;
+    font-size: 1rem;
 }
 
 /*ketika kursor diarahin ke button, warnanya jadi berubah*/
@@ -266,11 +272,14 @@ a{
 /*ukuran banner di halaman utama*/
 .img-slide-home{
     height: 50rem;
+    filter: brightness(50%)contrast(50%);
 }
 
 /*ukuran banner di halaman selain halaman utama*/
 .img-slide{
-    height: 25rem;
+    height: 30rem;
+    filter: brightness(50%)contrast(50%);
+
 }
 
 /*ukuran foto carousel di halaman programs*/
@@ -278,12 +287,31 @@ a{
     height: 50rem;
 }
 
+/*modifikasi warna di pagination*/
+.page-link{
+    color: #fff6ec;
+    background-color: #FEA041 !important;
+    border-color: #fff6ec !important;
+}
+
+/*kalo kursor diarahin ke pagination dan diklik, warnanya berubah*/
+.page-link:hover, .page-link:active{
+    color: #fff6ec;
+    background-color: #E86F33 !important;
+}
+
+/*kalo udah klik pagination, warna teks di pagination tetap sama*/
+.page-link:visited{
+    color: #fff6ec;
+}
+
 /*media query untuk web responsive*/
 /* untuk layar handphone */
-@media only screen and (max-width: 426px) {
+@media only screen and (width <= 426px) {
     .container.p-5{
         max-width: 100%;
         padding: 1rem !important;
+        margin: 0;
     }
 
     .img-slide-home{
@@ -299,10 +327,6 @@ a{
         width: 100%;
     }
 
-    .img-slide{
-        height: 18rem;
-    }
-
     .img-slide-carousel{
         height: 100%;
     }
@@ -312,41 +336,79 @@ a{
     }
 
     .carousel-caption{
-        line-height: 3rem;
+        line-height: 5rem;
         top: 50% !important;
     }
 
-    .carousel-caption > h1{
-        line-height: 2rem;
-        font-size: 30px;
+    h1{
+        font-size: 2rem;
     }
-
+    
+    .carousel-caption > h1{
+        line-height: 3.3rem;
+    }
+    
     .carousel-caption > p{
         font-size: 1rem;
     }
-
     
+    h2{
+        font-size: 1.7rem;
+    }
+    
+    h3{
+        font-size: 1.3rem;
+    }
+
+    p, label, .form-control, .nav-link, .btn.btn-primary, .page-link{
+        font-size: 0.9rem;
+    }
+
+    .headline-news, .testimonial{
+        font-size: 1.1rem;
+    }
+
+    .img-nav{
+        height: 5.5rem;
+    }
+
+    .row.p-5, .row.px-5.py-3{
+        padding: 1rem !important;
+    }
+
+    .contact-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .dropdown-item{
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .logo-sekolah{
+        width: 9rem;
+    }
+
+    .icon-check{
+        width: 1.9rem;
+        height: 1.9rem;
+    }
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (426px <= width <= 577px) {
+    .row.g-3{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (426px <= width <= 768px){
     .logo-sekolah{
         width: 10rem;
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px){
-    .logo-sekolah{
-        width: 10rem;
-    }
-
-    .card{
-        width: 24rem;
-    }
-
-    
-}
-
-@media only screen and (min-width: 576px) and (max-width: 991.98px){
+@media only screen and (576px <= width < 940px){
     footer > .container.p-5 > .row > .col-md-4 > .container.d-flex{
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -354,17 +416,17 @@ a{
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 991.98px){
+@media only screen and (426px <= width <= 991.98px){
     h1{
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
     
     .carousel-caption > h1{
-        line-height: 5rem;
+        line-height: 3.8rem;
     }
     
     .carousel-caption{
-        line-height: 9rem;
+        line-height: 5rem;
     }
     
     .carousel-caption > p{
@@ -379,23 +441,32 @@ a{
         font-size: 1.3rem;
     }
 
-    /*ukuran teks judul berita dan teks header testimoni*/
+    .img-slide-home{
+        height: 30rem;
+    }
+
     .headline-news, .testimonial{
         font-size: 1.2rem;
     }
 
+    .img-slide-carousel{
+        height: 30rem;
+    }
 
+    .row.p-5{
+        padding: 1rem 0 1rem 0 !important;
+    }
 }
 
 /* untuk layar tablet */
-@media only screen and (min-width: 768px) and (max-width: 991.98px){
+@media only screen and (768px <= width <= 991.98px){
     .container.p-5{
         max-width: 100%;
         padding: 2rem !important;
     }
 
     .col-md-4{
-        min-width: 330px;
+        min-width: 300px;
     }
 
     .col-md-5{
@@ -418,12 +489,12 @@ a{
         justify-content: center;
     }
 
-    form .row{
+    .row.row.g-3{
         justify-content: start;
     }
 }
 
-@media only screen and (max-width: 1199.98px){
+@media only screen and (426px <= width <= 768px){
     .container.p-5{
         margin: 0;
         max-width: 100%;
@@ -433,18 +504,4 @@ a{
         margin: 0 48px 0 48px;
         max-width: 100%;
     }
-
 }
-
-/* untuk layar laptop */
-@media only screen and (max-width: 1440px) {
-    
-}
-
-/*untuk layar monitor yang lebih besar*/
-@media only screen and (max-width: 2560px) {
-    
-}
-
-
-/*tampilannya kurang bagus dengan width di range 576px - 991px*/

@@ -167,14 +167,22 @@ a{
     height: 2rem;
 }
 
-/*warna background card program sekolah*/
+/*warna background dan lebar card program sekolah*/
 .bg-programs{
     background-color: #FEA041;
+    width: 21rem;
 }
 
-/*warna background card news*/
+/*warna background dan lebar card news*/
 .bg-news{
     background-color: #FFF1E3;
+    width: 25rem;
+}
+
+
+/*lebar card gallery*/
+.bg-gallery{
+    width: 23rem;
 }
 
 /*warna background dan teks di button*/
@@ -209,9 +217,10 @@ a{
     font-size: 0.8rem;
 }
 
-/*warna background card testimoni*/
+/*warna background dan lebar card testimoni*/
 .bg-testimonial{
     background-color: #FFE2C4;
+    width: 24rem;
 }
 
 /*tinggi poto di bagian program*/
